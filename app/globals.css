@@ -19,6 +19,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #d3d3d3;
   color: #000;
