@@ -1,8 +1,9 @@
 import React from 'react'
-
+import EmployeeTable from './components/EmployeeTable.jsx';
 function Boxes () {
   return(
 <>
+  <div className="flex flex-col">
         <div className="flex gap-10">
 
           <div className=" flex flex-col h-25 w-50 bg-blue-100 rounded-xl p-5 ">
@@ -52,7 +53,13 @@ function Boxes () {
           
               </div>
           </div>
+          </div>
+          
+        <div className="mt-10">
+        <EmployeeTable />
+        </div>
  </div>
+ 
 </>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import emptbl from './allEmployees.jsx';
 
 function Boxes () {
   return(
@@ -52,6 +53,8 @@ function Boxes () {
           
               </div>
           </div>
+          
+          <emptbl />
  </div>
 </>
     )
