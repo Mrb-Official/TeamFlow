@@ -1,8 +1,14 @@
+"use client";
+
 import React from 'react'
 import Image from "next/image";
+import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 
 function Sidebar()  {
+  const pathname = usePathname();
+
   return (
     <div className="flex flex-col h-full items-start   bg-white
     border-gray-100 ">
@@ -17,21 +23,21 @@ function Sidebar()  {
 />Team<span className=" text-blue-500 ">Flow</span></h1>
         
       <div className="p-4  w-full ">
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] focus:outline-none "><span className="material-symbols-outlined
-        ">dashboard_2</span>Desboard</a>    
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] "><span className="material-symbols-outlined">group</span>Employes</a>    
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] "><span className="material-symbols-outlined">event_note</span>Attandance</a>    
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] "><span className="material-symbols-outlined">location_away</span>Leaves</a>    
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] "><span className="material-symbols-outlined">local_atm</span>payroll</a>    
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] "><span className="material-symbols-outlined">analytics</span>reports</a>    
-        <a href="#" className="focus:border-none   focus:bg-blue-100
-        w-full p-3 rounded-[6px] "><span className="material-symbols-outlined">settings</span>setting</a>    
+        
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">dashboard_2</span>Desboard</Link>  
+
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">group</span>Employes</Link>    
+
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">event_note</span>Attandance</Link>    
+
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">location_away</span>Leaves</Link>    
+
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">local_atm</span>payroll</Link>    
+
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">analytics</span>reports</Link>    
+
+        <Link href="/" className={`flex items-center gap-3 w-full p-3 rounded-[6px] transition-colors outline-none ${pathname === '/' ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-600 hover:bg-gray-50'}`} ><span className="material-symbols-outlined">settings</span>setting</Link>    
+
     </div>
     
  </div>    
