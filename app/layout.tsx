@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
       <body>
-    <div className="grid grid-cols-[250px_1fr] h-screen w-full ">
+    <div className="grid grid-cols-[250px_1fr] h-screen fixed w-full ">
       <Sidebar />
   
       <div className=" flex flex-col h-screen w-full">

@@ -10,9 +10,9 @@ function Sidebar()  {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col h-full items-start   bg-white
+    <div className="flex flex-col h-screen relative items-start   bg-white
     border-gray-100 ">
-        <h1 className="font-bold text-2xl border border-gray-100 p-3
+        <h1 className="font-bold text-2xl border border-gray-100 p-[15px]
         w-full flex  ">
           <Image 
   src="/Team_Logo.png" 
