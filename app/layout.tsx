@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Sidebar from './components/Sidebar.jsx';
+import Navbar from './components/Navbar.jsx';
+import Attendece from './components/Attendece/page.jsx';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +31,21 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+    <div className="grid grid-cols-[250px_1fr] h-screen w-full ">
+      <Sidebar />
+  
+      <div className=" flex flex-col h-screen w-full">
+      <Navbar />
+      <div className="flex-1 w-full bg-gray-100  p-5" >
+        {children}
+
+      </div>
+  
+      </div>
+      </div>
+      
+      </body>
     </html>
   );
 }

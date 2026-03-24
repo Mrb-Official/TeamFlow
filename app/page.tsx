@@ -1,26 +1,59 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar.jsx";
-import Sidebar from "./components/Sidebar.jsx";
-import Desboard from "./components/Deshboard.jsx";
-import Attendence from "./components/Attendence.jsx";
+import React from 'react'
 
+function Boxes () {
+  return(
+<>
+        <div className="flex gap-10">
 
-export default function Home() {
-  return (
-    <>
-    <div className="grid grid-cols-[250px_1fr] h-screen w-full ">
-      <Sidebar />
-  
-      <div className=" flex flex-col h-screen w-full">
-      <Navbar />
-      <div className="flex-1 w-full bg-gray-100  p-5" >
-        <Attendence />
-
-      </div>
-  
-      </div>
-      </div>
-      
-      </>
-  );
+          <div className=" flex flex-col h-25 w-50 bg-blue-100 rounded-xl p-5 ">
+            <h3 className="font-bold ">Total Employees</h3>
+            <div className="flex justify-between ">
+              <h3 className="font-bold">(89)</h3>
+              
+              <span className="material-symbols-outlined">group</span>
+          
+              </div>
+              </div>
+              
+              {/*!second box */}
+              
+          <div className=" flex flex-col h-25 w-50 bg-green-100 rounded-xl p-5 ">
+            <h3 className="font-bold ">Present Today</h3>
+            <div className="flex justify-between ">
+              <h3 className="font-bold">(80)</h3>
+              
+              <span className="material-symbols-outlined">calendar_check</span>
+          
+              </div>
+          </div>
+          
+          
+                        {/*!third box */}
+              
+       <div className=" flex flex-col h-25 w-50 bg-yellow-100 rounded-xl p-5 ">
+            <h3 className="font-bold ">On Leave</h3>
+            <div className="flex justify-between ">
+              <h3 className="font-bold">(9)</h3>
+              
+              <span className="material-symbols-outlined">assignment_late</span>
+          
+              </div>
+          </div>
+          
+          
+            {/*!fourth box */}
+              
+          <div className=" flex flex-col h-25 w-50 bg-red-100 rounded-xl p-5 ">
+            <h3 className="font-bold ">Late</h3>
+            <div className="flex justify-between ">
+              <h3 className="font-bold">(1)</h3>
+              
+              <span className="material-symbols-outlined">schedule</span>
+          
+              </div>
+          </div>
+ </div>
+</>
+    )
 }
+  export default Boxes;
