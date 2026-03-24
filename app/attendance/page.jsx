@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 
-export default function attendence() {
+export default function Attendence() {
   return (
     <>
-    <div className="grid grid-cols-[250px_1fr] -500 flex flex-1 w-full items-center content-center">
+    <div className="grid grid-cols-[250px_1fr] -500  items-center content-center">
       
       <h1 className=" font-bold text-red-500 items-center text-2xl">Under Maintainence</h1>
   

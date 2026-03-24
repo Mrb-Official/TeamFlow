@@ -38,7 +38,7 @@ export default function Navbar() {
 
         {/* User Profile Icon (Sirf badi screen yani laptop/tablet par dikhega) */}
         <button className="p-2 h-10 bg-red-300 rounded-[15px] items-center">
-          <span class="material-symbols-outlined">logout</span>
+          <span className="material-symbols-outlined">logout</span>
         </button>
 
         {/* Hamburger Menu (Sirf mobile screen par dikhega, jaisa image mein tha) */}
