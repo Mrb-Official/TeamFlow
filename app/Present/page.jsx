@@ -193,4 +193,3 @@ export default function PresentThisMonthPage() {
     </div>
   );
 }
-export default PresentThisMonthPage;
